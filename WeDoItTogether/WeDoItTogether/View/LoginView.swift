@@ -7,7 +7,7 @@
 
 import UIKit
 
-class MainView: UIView {
+class LoginView: UIView {
     lazy var logoImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.image = UIImage(systemName: "figure.walk")
