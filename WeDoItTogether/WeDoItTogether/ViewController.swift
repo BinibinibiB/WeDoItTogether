@@ -10,13 +10,15 @@ import UIKit
 class ViewController: UIViewController {
 
     let mainView = MainView()
+    
     override func loadView() {
-        view = mainView
+        self.view = mainView
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        self.view.backgroundColor = .white
+        self.view.backgroundColor = .black
     }
 }
 
