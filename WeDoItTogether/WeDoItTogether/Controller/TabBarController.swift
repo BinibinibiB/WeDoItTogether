@@ -8,16 +8,23 @@
 import UIKit
 
 //메인탭바 컨트롤러
-class MainTabBarController: UITabBarController {
+class TabBarController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         //홈뷰 네비게이션 컨트롤러로 생성
-        let homeVC = UINavigationController.init(rootViewController: HomeViewController(title: "home"))
-        let chattingVC = UINavigationController.init(rootViewController: ChattingViewController(title: "chatting"))
-        let notificationVC = UINavigationController.init(rootViewController: NotificationViewController(title: "notification"))
-        let profileVC = UINavigationController.init(rootViewController: ProfileViewController(title: "profile"))
+        let homeVC = UINavigationController.init(rootViewController: HomeViewController(title: "Home"))
+        let chattingVC = UINavigationController.init(rootViewController: ChattingViewController(title: "Chatting"))
+        let notificationVC = UINavigationController.init(rootViewController: NotificationViewController(title: "Notification"))
+        let profileVC = UINavigationController.init(rootViewController: ProfileViewController(title: "Profile"))
+        
+        //네비게이션 타이틀 설정
+        homeVC.navigationBar.prefersLargeTitles = true
+        chattingVC.navigationBar.prefersLargeTitles = true
+        notificationVC.navigationBar.prefersLargeTitles = true
+        profileVC.navigationBar.prefersLargeTitles = true
+        
         //탭바에 컨트롤러 추가
         self.viewControllers = [homeVC, chattingVC, notificationVC, profileVC]
         

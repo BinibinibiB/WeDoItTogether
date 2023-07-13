@@ -25,7 +25,7 @@ class LoginViewController: UIViewController {
     @objc func touchUpLoginButton(_ sender: UIButton) {
 
         //SceneDelegate changeRootView 호출
-        (UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate)?.changeRootView(MainTabBarController(), animated: true)
+        (UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate)?.changeRootView(TabBarController(), animated: true)
 
     }
 }
