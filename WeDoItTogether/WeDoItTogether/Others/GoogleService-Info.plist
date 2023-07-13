@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>924842959496-gqmmeulqg9mnqk11k6rgtoj3red6s0jm.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.924842959496-gqmmeulqg9mnqk11k6rgtoj3red6s0jm</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBhPdZGDKmlkJCSR1Z1hapLJFltoFonkJU</string>
+	<key>GCM_SENDER_ID</key>
+	<string>924842959496</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.tori.WeDoItTogether</string>
+	<key>PROJECT_ID</key>
+	<string>wedoittogether</string>
+	<key>STORAGE_BUCKET</key>
+	<string>wedoittogether.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:924842959496:ios:963cf9ec8927de7650353d</string>
+	<key>DATABASE_URL</key>
+	<string>https://wedoittogether-default-rtdb.firebaseio.com</string>
+</dict>
+</plist>

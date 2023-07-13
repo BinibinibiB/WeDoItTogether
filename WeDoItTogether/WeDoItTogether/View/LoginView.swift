@@ -10,9 +10,8 @@ import UIKit
 class LoginView: UIView {
     lazy var logoImageView: UIImageView = {
         let imageView = UIImageView()
-        imageView.image = UIImage(systemName: "figure.walk")
+        imageView.image = UIImage(named: "logo")
         imageView.contentMode = .scaleAspectFit
-        imageView.backgroundColor = .black
         imageView.setContentCompressionResistancePriority(.defaultLow, for: .vertical)
         imageView.setContentHuggingPriority(.defaultLow, for: .vertical)
         
@@ -83,6 +82,7 @@ class LoginView: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
+        self.backgroundColor = .white
         addViews()
         setLayoutConstraints()
     }
