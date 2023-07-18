@@ -19,6 +19,7 @@
 		534F553F2A60723C00A565F8 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534F553E2A60723C00A565F8 /* NotificationViewController.swift */; };
 		534F55412A60724E00A565F8 /* ChattingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534F55402A60724E00A565F8 /* ChattingView.swift */; };
 		534F55432A60726000A565F8 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534F55422A60726000A565F8 /* NotificationView.swift */; };
+		534F55452A659DDE00A565F8 /* UIView+Separator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534F55442A659DDE00A565F8 /* UIView+Separator.swift */; };
 		B109F91A2A605A97002E870C /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B109F9192A605A97002E870C /* TabBarController.swift */; };
 		B109F9202A605C5B002E870C /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B109F91F2A605C5B002E870C /* HomeView.swift */; };
 		B109F9222A605D40002E870C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B109F9212A605D40002E870C /* HomeViewController.swift */; };
@@ -44,6 +45,7 @@
 		534F553E2A60723C00A565F8 /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 		534F55402A60724E00A565F8 /* ChattingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChattingView.swift; sourceTree = "<group>"; };
 		534F55422A60726000A565F8 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		534F55442A659DDE00A565F8 /* UIView+Separator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Separator.swift"; sourceTree = "<group>"; };
 		B109F9192A605A97002E870C /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		B109F91F2A605C5B002E870C /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		B109F9212A605D40002E870C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 		B109F91B2A605AA1002E870C /* View */ = {
 			isa = PBXGroup;
 			children = (
+				534F55442A659DDE00A565F8 /* UIView+Separator.swift */,
 				534F55362A603B9400A565F8 /* LoginView.swift */,
 				B109F91F2A605C5B002E870C /* HomeView.swift */,
 				534F55382A60713300A565F8 /* ProfileView.swift */,
@@ -215,6 +218,7 @@
 				534F55432A60726000A565F8 /* NotificationView.swift in Sources */,
 				534F55272A603B1000A565F8 /* LoginViewController.swift in Sources */,
 				B109F9202A605C5B002E870C /* HomeView.swift in Sources */,
+				534F55452A659DDE00A565F8 /* UIView+Separator.swift in Sources */,
 				534F55372A603B9400A565F8 /* LoginView.swift in Sources */,
 				B109F91A2A605A97002E870C /* TabBarController.swift in Sources */,
 				534F55232A603B1000A565F8 /* AppDelegate.swift in Sources */,
