@@ -19,10 +19,16 @@
 		534F553F2A60723C00A565F8 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534F553E2A60723C00A565F8 /* NotificationViewController.swift */; };
 		534F55412A60724E00A565F8 /* ChattingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534F55402A60724E00A565F8 /* ChattingView.swift */; };
 		534F55432A60726000A565F8 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534F55422A60726000A565F8 /* NotificationView.swift */; };
+<<<<<<< HEAD
 		534F55452A659DDE00A565F8 /* UIView+Separator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534F55442A659DDE00A565F8 /* UIView+Separator.swift */; };
 		534F55DE2A682D0300A565F8 /* SystemNotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534F55DD2A682D0300A565F8 /* SystemNotificationViewController.swift */; };
 		534F55E22A682E3400A565F8 /* NotificationContentsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534F55E12A682E3400A565F8 /* NotificationContentsTableViewCell.swift */; };
 		534F55E42A683DCE00A565F8 /* UserNotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534F55E32A683DCE00A565F8 /* UserNotificationViewController.swift */; };
+=======
+		546BE7D22A68199B00E977E7 /* PasswordFindVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546BE7D12A68199B00E977E7 /* PasswordFindVIew.swift */; };
+		B101A1BD2A681CEF00B92ECF /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B101A1BC2A681CEE00B92ECF /* RegisterView.swift */; };
+		B101A1C02A681D0D00B92ECF /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B101A1BF2A681D0D00B92ECF /* RegisterViewController.swift */; };
+>>>>>>> yubin
 		B109F91A2A605A97002E870C /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B109F9192A605A97002E870C /* TabBarController.swift */; };
 		B109F9202A605C5B002E870C /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B109F91F2A605C5B002E870C /* HomeView.swift */; };
 		B109F9222A605D40002E870C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B109F9212A605D40002E870C /* HomeViewController.swift */; };
@@ -48,10 +54,16 @@
 		534F553E2A60723C00A565F8 /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 		534F55402A60724E00A565F8 /* ChattingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChattingView.swift; sourceTree = "<group>"; };
 		534F55422A60726000A565F8 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+<<<<<<< HEAD
 		534F55442A659DDE00A565F8 /* UIView+Separator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Separator.swift"; sourceTree = "<group>"; };
 		534F55DD2A682D0300A565F8 /* SystemNotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemNotificationViewController.swift; sourceTree = "<group>"; };
 		534F55E12A682E3400A565F8 /* NotificationContentsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationContentsTableViewCell.swift; sourceTree = "<group>"; };
 		534F55E32A683DCE00A565F8 /* UserNotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserNotificationViewController.swift; sourceTree = "<group>"; };
+=======
+		546BE7D12A68199B00E977E7 /* PasswordFindVIew.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordFindVIew.swift; sourceTree = "<group>"; };
+		B101A1BC2A681CEE00B92ECF /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		B101A1BF2A681D0D00B92ECF /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+>>>>>>> yubin
 		B109F9192A605A97002E870C /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		B109F91F2A605C5B002E870C /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		B109F9212A605D40002E870C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -99,16 +111,43 @@
 			path = WeDoItTogether;
 			sourceTree = "<group>";
 		};
+<<<<<<< HEAD
 		B109F91B2A605AA1002E870C /* View */ = {
 			isa = PBXGroup;
 			children = (
 				534F55442A659DDE00A565F8 /* UIView+Separator.swift */,
+=======
+		B101A1BB2A681C9200B92ECF /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				B101A1BC2A681CEE00B92ECF /* RegisterView.swift */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		B101A1BE2A681CF900B92ECF /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				B101A1BF2A681D0D00B92ECF /* RegisterViewController.swift */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		B109F91B2A605AA1002E870C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B101A1BB2A681C9200B92ECF /* Register */,
+				546BE7D12A68199B00E977E7 /* PasswordFindVIew.swift */,
+>>>>>>> yubin
 				534F55362A603B9400A565F8 /* LoginView.swift */,
 				B109F91F2A605C5B002E870C /* HomeView.swift */,
 				534F55382A60713300A565F8 /* ProfileView.swift */,
 				534F55402A60724E00A565F8 /* ChattingView.swift */,
 				534F55422A60726000A565F8 /* NotificationView.swift */,
+<<<<<<< HEAD
 				534F55E12A682E3400A565F8 /* NotificationContentsTableViewCell.swift */,
+=======
+>>>>>>> yubin
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -116,14 +155,21 @@
 		B109F91C2A605AAA002E870C /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+<<<<<<< HEAD
+=======
+				B101A1BE2A681CF900B92ECF /* Register */,
+>>>>>>> yubin
 				B109F9192A605A97002E870C /* TabBarController.swift */,
 				534F55262A603B1000A565F8 /* LoginViewController.swift */,
 				B109F9212A605D40002E870C /* HomeViewController.swift */,
 				534F553A2A60718600A565F8 /* ProfileViewController.swift */,
 				534F553C2A60721E00A565F8 /* ChattingViewController.swift */,
 				534F553E2A60723C00A565F8 /* NotificationViewController.swift */,
+<<<<<<< HEAD
 				534F55DD2A682D0300A565F8 /* SystemNotificationViewController.swift */,
 				534F55E32A683DCE00A565F8 /* UserNotificationViewController.swift */,
+=======
+>>>>>>> yubin
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -221,12 +267,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+<<<<<<< HEAD
 				534F55E42A683DCE00A565F8 /* UserNotificationViewController.swift in Sources */,
+=======
+				546BE7D22A68199B00E977E7 /* PasswordFindVIew.swift in Sources */,
+>>>>>>> yubin
 				534F55392A60713300A565F8 /* ProfileView.swift in Sources */,
 				534F553F2A60723C00A565F8 /* NotificationViewController.swift in Sources */,
 				534F55412A60724E00A565F8 /* ChattingView.swift in Sources */,
 				534F55432A60726000A565F8 /* NotificationView.swift in Sources */,
 				534F55272A603B1000A565F8 /* LoginViewController.swift in Sources */,
+<<<<<<< HEAD
 				B109F9202A605C5B002E870C /* HomeView.swift in Sources */,
 				534F55452A659DDE00A565F8 /* UIView+Separator.swift in Sources */,
 				534F55372A603B9400A565F8 /* LoginView.swift in Sources */,
@@ -236,6 +287,16 @@
 				534F553D2A60721E00A565F8 /* ChattingViewController.swift in Sources */,
 				534F553B2A60718600A565F8 /* ProfileViewController.swift in Sources */,
 				534F55E22A682E3400A565F8 /* NotificationContentsTableViewCell.swift in Sources */,
+=======
+				B101A1BD2A681CEF00B92ECF /* RegisterView.swift in Sources */,
+				B109F9202A605C5B002E870C /* HomeView.swift in Sources */,
+				534F55372A603B9400A565F8 /* LoginView.swift in Sources */,
+				B109F91A2A605A97002E870C /* TabBarController.swift in Sources */,
+				534F55232A603B1000A565F8 /* AppDelegate.swift in Sources */,
+				B101A1C02A681D0D00B92ECF /* RegisterViewController.swift in Sources */,
+				534F553D2A60721E00A565F8 /* ChattingViewController.swift in Sources */,
+				534F553B2A60718600A565F8 /* ProfileViewController.swift in Sources */,
+>>>>>>> yubin
 				B109F9222A605D40002E870C /* HomeViewController.swift in Sources */,
 				534F55252A603B1000A565F8 /* SceneDelegate.swift in Sources */,
 			);

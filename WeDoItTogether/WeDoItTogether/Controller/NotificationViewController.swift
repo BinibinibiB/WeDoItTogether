@@ -9,7 +9,10 @@ import UIKit
 
 class NotificationViewController: UIViewController {
     let notificationView = NotificationView()
+<<<<<<< HEAD
     let viewControllers = [SystemNotificationViewController(), UserNotificationViewController()]
+=======
+>>>>>>> yubin
     
     convenience init(title: String) {
         self.init()
@@ -22,6 +25,7 @@ class NotificationViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+<<<<<<< HEAD
         notificationView.tabSegmentedControl.addTarget(self, action: #selector(changeUnderLinePosition), for: .valueChanged)
         configurePageView()
         // Do any additional setup after loading the view.
@@ -64,3 +68,21 @@ class NotificationViewController: UIViewController {
 //
 //
 //}
+=======
+
+        // Do any additional setup after loading the view.
+    }
+    
+
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
+    }
+    */
+
+}
+>>>>>>> yubin

@@ -8,6 +8,7 @@
 import UIKit
 
 class NotificationView: UIView {
+<<<<<<< HEAD
     lazy var tabSegmentedControl: UISegmentedControl = {
         let segment = UISegmentedControl()
         segment.selectedSegmentTintColor = .clear
@@ -60,11 +61,18 @@ class NotificationView: UIView {
         self.backgroundColor = .white
         addViews()
         setLayoutConstraints()
+=======
+
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        self.backgroundColor = .cyan
+>>>>>>> yubin
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+<<<<<<< HEAD
     
     func addViews() {
         [tabSegmentedControl, underLineView].forEach{ item in
@@ -108,4 +116,7 @@ class NotificationView: UIView {
         ])
         
     }
+=======
+
+>>>>>>> yubin
 }

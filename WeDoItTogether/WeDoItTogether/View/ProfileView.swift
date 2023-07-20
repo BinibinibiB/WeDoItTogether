@@ -8,6 +8,7 @@
 import UIKit
 
 class ProfileView: UIView {
+<<<<<<< HEAD
     lazy var profilePhotoImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.image = UIImage(systemName: "person.fill")
@@ -82,17 +83,23 @@ class ProfileView: UIView {
         
         return view
     }()
+=======
+>>>>>>> yubin
 
     override init(frame: CGRect) {
         super.init(frame: frame)
         self.backgroundColor = .white
+<<<<<<< HEAD
         addViews()
         setLayoutConstraints()
+=======
+>>>>>>> yubin
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+<<<<<<< HEAD
     
     func addViews() {
         [profilePhotoImageView, nameLabel, emailLabel, profileEditButton, notificationView, logoutButton].forEach{ item in
@@ -156,4 +163,7 @@ class ProfileView: UIView {
             logoutButton.heightAnchor.constraint(equalToConstant: 50)
         ])
     }
+=======
+
+>>>>>>> yubin
 }
