@@ -14,6 +14,10 @@ class HomeViewController: UIViewController {
     convenience init(title: String) {
         self.init()
         self.title = title
+        
+        let addButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addButtonTapped))
+        
+        navigationItem.rightBarButtonItem = addButton
     }
     
     override func loadView() {
@@ -22,5 +26,8 @@ class HomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    @objc private func addButtonTapped() {
+        print("Add button tapped")
     }
 }
