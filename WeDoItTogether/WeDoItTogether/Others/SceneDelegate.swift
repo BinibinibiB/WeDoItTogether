@@ -21,10 +21,13 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         let homeView = TabBarController()
         
-        if user != nil {
+        if user != nil && user?.email != "admin@admin.com"{
             print("로그인된 유저 : \(String(describing: user))")
             window?.rootViewController = homeView
-        } else {
+        }else if user?.email == "admin@admin.com"{
+            print("q")
+            window?.rootViewController = UINavigationController(rootViewController: NotificationManagementViewController())
+        }else {
             window?.rootViewController = loginView
         }
         
