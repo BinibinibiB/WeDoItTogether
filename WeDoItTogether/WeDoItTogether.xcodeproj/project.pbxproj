@@ -33,6 +33,7 @@
 		534F55EA2A68DDF600A565F8 /* NotificationContentsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534F55E92A68DDF600A565F8 /* NotificationContentsTableViewCell.swift */; };
 		534F55EC2A68DE2200A565F8 /* SystemNotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534F55EB2A68DE2200A565F8 /* SystemNotificationViewController.swift */; };
 		534F55EE2A68DE2900A565F8 /* UserNotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534F55ED2A68DE2900A565F8 /* UserNotificationViewController.swift */; };
+		5384FD402A7FC17300C0E184 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5384FD3F2A7FC17300C0E184 /* Test.swift */; };
 		5388B7242A7C1EE5004B530A /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5388B7232A7C1EE5004B530A /* StorageManager.swift */; };
 		53A724712A6BB9260098A3B3 /* ProfileEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A724702A6BB9260098A3B3 /* ProfileEditViewController.swift */; };
 		53A724732A6BB98C0098A3B3 /* ProfileEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A724722A6BB98C0098A3B3 /* ProfileEditView.swift */; };
@@ -97,6 +98,7 @@
 		534F55E92A68DDF600A565F8 /* NotificationContentsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationContentsTableViewCell.swift; sourceTree = "<group>"; };
 		534F55EB2A68DE2200A565F8 /* SystemNotificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SystemNotificationViewController.swift; sourceTree = "<group>"; };
 		534F55ED2A68DE2900A565F8 /* UserNotificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserNotificationViewController.swift; sourceTree = "<group>"; };
+		5384FD3F2A7FC17300C0E184 /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
 		5388B7232A7C1EE5004B530A /* StorageManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 		53A724702A6BB9260098A3B3 /* ProfileEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditViewController.swift; sourceTree = "<group>"; };
 		53A724722A6BB98C0098A3B3 /* ProfileEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditView.swift; sourceTree = "<group>"; };
@@ -263,6 +265,7 @@
 				53479FF72A699EDE00645844 /* Cell */,
 				B109F91B2A605AA1002E870C /* View */,
 				B18C83732A7FC97500683F4D /* zfzfzz.swift */,
+				5384FD3F2A7FC17300C0E184 /* Test.swift */,
 			);
 			path = WeDoItTogether;
 			sourceTree = "<group>";
@@ -462,6 +465,7 @@
 				534F55412A60724E00A565F8 /* ChattingView.swift in Sources */,
 				534F55432A60726000A565F8 /* NotificationView.swift in Sources */,
 				534F55272A603B1000A565F8 /* LoginViewController.swift in Sources */,
+				5384FD402A7FC17300C0E184 /* Test.swift in Sources */,
 				B18B47D02A7AC98A006EC979 /* CurrentLocation.swift in Sources */,
 				5480608A2A696B0C000DFC56 /* ForgetPasswordViewController.swift in Sources */,
 				B18C83742A7FC97500683F4D /* zfzfzz.swift in Sources */,
