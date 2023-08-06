@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Firebase
 
 class NotificationManagementViewController: UIViewController {
     let notificationManagementView = NotificationManagementView()
@@ -19,6 +20,12 @@ class NotificationManagementViewController: UIViewController {
         super.viewDidLoad()
         setView()
         configureTableView()
+        getDatabaseInfo()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        notificationManagementView.tableView.reloadData()
     }
     
     private func configureTableView(){
@@ -35,20 +42,48 @@ class NotificationManagementViewController: UIViewController {
 }
 
 //MARK: - Button
-extension NotificationManagementViewController{
+extension NotificationManagementViewController {
     @objc func touchUpAddButton(_ sender: UIBarButtonItem) {
         self.navigationController?.pushViewController(NotificationAddViewController(), animated: true)
     }
 }
 
+//MARK: - 데이터 불러오기
+extension NotificationManagementViewController {
+    private func getDatabaseInfo() {
+        let ref = Database.database().reference()
+        let itemsRef = ref.child("SystemNotification")
+        
+        itemsRef.observeSingleEvent(of: .value) { (snapshot)  in
+            if let items = snapshot.children.allObjects as? [DataSnapshot] {
+                for itemSnapshot in items {
+                    if let notification = itemSnapshot.value as? [String: Any],
+                       let id = notification["id"] as? String,
+                       let title = notification["title"] as? String,
+                       let contents = notification["contents"] as? String,
+                       let date = notification["createDate"] as? String
+                    {
+                        let noti = SystemNotification(id: id ,title: title, contents: contents, createDate: date)
+                        SystemNotification.notificationList.append(noti)
+                    }
+                }
+                
+                self.notificationManagementView.tableView.reloadData()
+            }
+        }
+    }
+}
 //MARK: - TableView Delegate
-extension NotificationManagementViewController : UITableViewDataSource, UITableViewDelegate{
+extension NotificationManagementViewController : UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return SystemNotification.notificationList.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: NotificationContentsTableViewCell.identifier, for: indexPath) as? NotificationContentsTableViewCell else { fatalError() }
+        
+        cell.titleLabel.text = SystemNotification.notificationList[indexPath.row].title
+        cell.dateLabel.text = SystemNotification.notificationList[indexPath.row].createDate
         
         return cell
     }
@@ -57,3 +92,5 @@ extension NotificationManagementViewController : UITableViewDataSource, UITableV
           return UITableView.automaticDimension
     }
 }
+
+

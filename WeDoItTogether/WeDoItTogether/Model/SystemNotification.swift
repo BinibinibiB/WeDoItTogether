@@ -7,15 +7,12 @@
 
 import Foundation
 
-struct SystemNotification:Identifiable {
-    var id: UUID = UUID()
+struct SystemNotification: Identifiable, Codable {
+    var id: String
     var title: String
     var contents: String
-    var createDate: Date
-    var createDateToString:String {
-        let formatter = DateFormatter()
-        formatter.dateFormat = "yyyy.MM.dd"
-        
-        return formatter.string(from: createDate)
-    }
+    var createDate: String
+    
+    static var notificationList: [SystemNotification] = [
+    ]
 }

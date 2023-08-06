@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Firebase
 
 class NotificationAddViewController: UIViewController {
     let notificationAddView = NotificationAddView()
@@ -33,7 +34,24 @@ class NotificationAddViewController: UIViewController {
 //MARK: - Button
 extension NotificationAddViewController {
     @objc func touchUpSaveButton(_ sender: UIBarButtonItem){
-        print("save")
+        guard let title = notificationAddView.titleTextField.text else { return }
+        guard let contents = notificationAddView.contentsTextView.text else { return }
+        
+        //Date to String
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy.MM.dd"
+        
+        let date = formatter.string(from: Date())
+        
+        let newNotification = SystemNotification(id: UUID().uuidString ,title: title, contents: contents, createDate: date)
+        let newItemDictionary = newNotification.asDictionary()
+        
+        let database = Database.database().reference()
+        let newItemRef = database.child("SystemNotification").child(newNotification.id)
+        
+        newItemRef.setValue(newItemDictionary)
+        
+        SystemNotification.notificationList.append(newNotification)
         self.navigationController?.popViewController(animated: true)
     }
     
@@ -41,4 +59,5 @@ extension NotificationAddViewController {
         print("cancel")
         self.navigationController?.popViewController(animated: true)
     }
+    
 }
