@@ -13,6 +13,6 @@ struct SystemNotification: Identifiable, Codable {
     var contents: String
     var createDate: String
     
-    static var notificationList: [SystemNotification] = [
-    ]
 }
+
+var notificationList: [SystemNotification] = []

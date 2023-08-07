@@ -10,6 +10,7 @@ import Firebase
 
 class NotificationManagementViewController: UIViewController {
     let notificationManagementView = NotificationManagementView()
+    var notificationData: [SystemNotification] = notificationList
     
     override func loadView() {
         super.loadView()
@@ -64,26 +65,42 @@ extension NotificationManagementViewController {
                        let date = notification["createDate"] as? String
                     {
                         let noti = SystemNotification(id: id ,title: title, contents: contents, createDate: date)
-                        SystemNotification.notificationList.append(noti)
+                        notificationList.append(noti)
                     }
+                    
                 }
-                
+                self.sortData()
                 self.notificationManagementView.tableView.reloadData()
             }
         }
+    }
+    
+    private func sortData(){
+            notificationList.sort { noti1, noti2 in
+            print("dd")
+            let formatter = DateFormatter()
+            formatter.dateFormat = "yyyy.MM.dd HH:mm"
+            
+            guard let date1: Date = formatter.date(from: noti1.createDate) else {
+                return false }
+            guard let date2: Date = formatter.date(from: noti2.createDate) else { return false }
+            
+            return date1.compare(date2) == .orderedDescending
+        }
+        self.notificationManagementView.tableView.reloadData()
     }
 }
 //MARK: - TableView Delegate
 extension NotificationManagementViewController : UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return SystemNotification.notificationList.count
+        return notificationList.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: NotificationContentsTableViewCell.identifier, for: indexPath) as? NotificationContentsTableViewCell else { fatalError() }
         
-        cell.titleLabel.text = SystemNotification.notificationList[indexPath.row].title
-        cell.dateLabel.text = SystemNotification.notificationList[indexPath.row].createDate
+        cell.titleLabel.text = notificationList[indexPath.row].title
+        cell.dateLabel.text = notificationList[indexPath.row].createDate
         
         return cell
     }

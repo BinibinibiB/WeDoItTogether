@@ -39,7 +39,7 @@ extension NotificationAddViewController {
         
         //Date to String
         let formatter = DateFormatter()
-        formatter.dateFormat = "yyyy.MM.dd"
+        formatter.dateFormat = "yyyy.MM.dd HH:mm"
         
         let date = formatter.string(from: Date())
         
@@ -51,7 +51,7 @@ extension NotificationAddViewController {
         
         newItemRef.setValue(newItemDictionary)
         
-        SystemNotification.notificationList.append(newNotification)
+        notificationList.append(newNotification)
         self.navigationController?.popViewController(animated: true)
     }
     
