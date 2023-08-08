@@ -25,7 +25,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             print("로그인된 유저 : \(String(describing: user))")
             window?.rootViewController = homeView
         }else if user?.email == "admin@admin.com"{
-            window?.rootViewController = UINavigationController(rootViewController: NotificationManagementViewController())
+            window?.rootViewController = UINavigationController(rootViewController: AdminHomeViewController())
         }else {
             window?.rootViewController = loginView
         }

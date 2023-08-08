@@ -39,6 +39,10 @@
 		5384FD482A7FEF7D00C0E184 /* NotificationAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5384FD472A7FEF7D00C0E184 /* NotificationAddViewController.swift */; };
 		5384FD4A2A7FEF9F00C0E184 /* NotificationAddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5384FD492A7FEF9F00C0E184 /* NotificationAddView.swift */; };
 		5384FD4C2A7FF2D900C0E184 /* SystemNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5384FD4B2A7FF2D900C0E184 /* SystemNotification.swift */; };
+		5384FD4E2A807BDE00C0E184 /* SystemNotificationDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5384FD4D2A807BDE00C0E184 /* SystemNotificationDetailViewController.swift */; };
+		5384FD502A807BFC00C0E184 /* SystemNotificationDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5384FD4F2A807BFC00C0E184 /* SystemNotificationDetailView.swift */; };
+		5384FD592A80D1BC00C0E184 /* AdminHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5384FD582A80D1BC00C0E184 /* AdminHomeViewController.swift */; };
+		5384FD5B2A80D1CB00C0E184 /* AdminHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5384FD5A2A80D1CB00C0E184 /* AdminHomeView.swift */; };
 		5388B7242A7C1EE5004B530A /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5388B7232A7C1EE5004B530A /* StorageManager.swift */; };
 		53A724712A6BB9260098A3B3 /* ProfileEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A724702A6BB9260098A3B3 /* ProfileEditViewController.swift */; };
 		53A724732A6BB98C0098A3B3 /* ProfileEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A724722A6BB98C0098A3B3 /* ProfileEditView.swift */; };
@@ -109,6 +113,10 @@
 		5384FD472A7FEF7D00C0E184 /* NotificationAddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationAddViewController.swift; sourceTree = "<group>"; };
 		5384FD492A7FEF9F00C0E184 /* NotificationAddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationAddView.swift; sourceTree = "<group>"; };
 		5384FD4B2A7FF2D900C0E184 /* SystemNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemNotification.swift; sourceTree = "<group>"; };
+		5384FD4D2A807BDE00C0E184 /* SystemNotificationDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemNotificationDetailViewController.swift; sourceTree = "<group>"; };
+		5384FD4F2A807BFC00C0E184 /* SystemNotificationDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemNotificationDetailView.swift; sourceTree = "<group>"; };
+		5384FD582A80D1BC00C0E184 /* AdminHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminHomeViewController.swift; sourceTree = "<group>"; };
+		5384FD5A2A80D1CB00C0E184 /* AdminHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminHomeView.swift; sourceTree = "<group>"; };
 		5388B7232A7C1EE5004B530A /* StorageManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 		53A724702A6BB9260098A3B3 /* ProfileEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditViewController.swift; sourceTree = "<group>"; };
 		53A724722A6BB98C0098A3B3 /* ProfileEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditView.swift; sourceTree = "<group>"; };
@@ -202,6 +210,7 @@
 			isa = PBXGroup;
 			children = (
 				534F55422A60726000A565F8 /* NotificationView.swift */,
+				5384FD4F2A807BFC00C0E184 /* SystemNotificationDetailView.swift */,
 			);
 			path = Notification;
 			sourceTree = "<group>";
@@ -233,6 +242,7 @@
 				534F55EB2A68DE2200A565F8 /* SystemNotificationViewController.swift */,
 				534F55ED2A68DE2900A565F8 /* UserNotificationViewController.swift */,
 				534F553E2A60723C00A565F8 /* NotificationViewController.swift */,
+				5384FD4D2A807BDE00C0E184 /* SystemNotificationDetailViewController.swift */,
 			);
 			path = Notification;
 			sourceTree = "<group>";
@@ -285,6 +295,7 @@
 			children = (
 				5384FD432A7FE28600C0E184 /* NotificationManagementViewController.swift */,
 				5384FD472A7FEF7D00C0E184 /* NotificationAddViewController.swift */,
+				5384FD582A80D1BC00C0E184 /* AdminHomeViewController.swift */,
 			);
 			path = Admin;
 			sourceTree = "<group>";
@@ -294,6 +305,7 @@
 			children = (
 				5384FD452A7FE29A00C0E184 /* NotificationManagementView.swift */,
 				5384FD492A7FEF9F00C0E184 /* NotificationAddView.swift */,
+				5384FD5A2A80D1CB00C0E184 /* AdminHomeView.swift */,
 			);
 			path = Admin;
 			sourceTree = "<group>";
@@ -506,6 +518,7 @@
 				B18C83742A7FC97500683F4D /* zfzfzz.swift in Sources */,
 				5458D50B2A7BBB5700C98C17 /* ChattingCell.swift in Sources */,
 				4BD9D5D32A8008B700AA160F /* AddContentMapViewController.swift in Sources */,
+				5384FD502A807BFC00C0E184 /* SystemNotificationDetailView.swift in Sources */,
 				B101A1BD2A681CEF00B92ECF /* RegisterView.swift in Sources */,
 				5384FD482A7FEF7D00C0E184 /* NotificationAddViewController.swift in Sources */,
 				5458D50F2A7BBB7C00C98C17 /* ChatListViewController.swift in Sources */,
@@ -513,6 +526,7 @@
 				B18C83982A80082A00683F4D /* Loading.swift in Sources */,
 				4B46DB102A6D463B00EA7903 /* AddContentViewController.swift in Sources */,
 				534F55EA2A68DDF600A565F8 /* NotificationContentsTableViewCell.swift in Sources */,
+				5384FD5B2A80D1CB00C0E184 /* AdminHomeView.swift in Sources */,
 				534F55372A603B9400A565F8 /* LoginView.swift in Sources */,
 				B109F91A2A605A97002E870C /* TabBarController.swift in Sources */,
 				4BDD0FDC2A6A19E80065D5C1 /* AddContentView.swift in Sources */,
@@ -536,7 +550,9 @@
 				B11477292A6909FF003AB9C7 /* User.swift in Sources */,
 				4BD9D5D72A80091B00AA160F /* CustomMarkerView.swift in Sources */,
 				5458D5112A7BBB9800C98C17 /* ChatList.swift in Sources */,
+				5384FD592A80D1BC00C0E184 /* AdminHomeViewController.swift in Sources */,
 				5384FD4A2A7FEF9F00C0E184 /* NotificationAddView.swift in Sources */,
+				5384FD4E2A807BDE00C0E184 /* SystemNotificationDetailViewController.swift in Sources */,
 				4BDD0FE02A6A20230065D5C1 /* DetailContentViewController.swift in Sources */,
 				4BD9D5D52A8008F300AA160F /* AddContentMapView.swift in Sources */,
 			);

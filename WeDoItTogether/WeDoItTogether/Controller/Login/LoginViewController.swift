@@ -130,7 +130,7 @@ extension LoginViewController {
                 UserDefaultsData.shared.setUser(email: user.email, name: user.name, password: user.password)
                 
                 if user.email == "admin@admin.com"{
-                    (UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate)?.changeRootView(NotificationManagementViewController(), animated: true)
+                    (UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate)?.changeRootView(UINavigationController(rootViewController: AdminHomeViewController()), animated: true)
                 }else {
                     (UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate)?.changeRootView(TabBarController(), animated: true)
                 }

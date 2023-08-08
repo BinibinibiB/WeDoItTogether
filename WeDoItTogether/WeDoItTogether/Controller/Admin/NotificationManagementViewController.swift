@@ -77,7 +77,6 @@ extension NotificationManagementViewController {
     
     private func sortData(){
             notificationList.sort { noti1, noti2 in
-            print("dd")
             let formatter = DateFormatter()
             formatter.dateFormat = "yyyy.MM.dd HH:mm"
             
@@ -107,6 +106,14 @@ extension NotificationManagementViewController : UITableViewDataSource, UITableV
     
     func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
           return UITableView.automaticDimension
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let detailViewController = SystemNotificationDetailViewController()
+        detailViewController.titleLabel = notificationList[indexPath.row].title
+        detailViewController.contentsLabel = notificationList[indexPath.row].contents
+        
+        self.navigationController?.pushViewController(detailViewController, animated: true)
     }
 }
 
