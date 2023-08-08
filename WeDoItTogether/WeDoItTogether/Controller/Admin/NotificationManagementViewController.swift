@@ -69,24 +69,9 @@ extension NotificationManagementViewController {
                     }
                     
                 }
-                self.sortData()
                 self.notificationManagementView.tableView.reloadData()
             }
         }
-    }
-    
-    private func sortData(){
-            notificationList.sort { noti1, noti2 in
-            let formatter = DateFormatter()
-            formatter.dateFormat = "yyyy.MM.dd HH:mm"
-            
-            guard let date1: Date = formatter.date(from: noti1.createDate) else {
-                return false }
-            guard let date2: Date = formatter.date(from: noti2.createDate) else { return false }
-            
-            return date1.compare(date2) == .orderedDescending
-        }
-        self.notificationManagementView.tableView.reloadData()
     }
 }
 //MARK: - TableView Delegate
