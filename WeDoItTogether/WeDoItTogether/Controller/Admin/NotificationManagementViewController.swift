@@ -88,7 +88,7 @@ extension NotificationManagementViewController : UITableViewDataSource, UITableV
         guard let cell = tableView.dequeueReusableCell(withIdentifier: NotificationContentsTableViewCell.identifier, for: indexPath) as? NotificationContentsTableViewCell else { fatalError() }
         
         cell.titleLabel.text = notificationList[indexPath.row].title
-        cell.dateLabel.text = notificationList[indexPath.row].createDate + "/" + notificationList[indexPath.row].id
+        cell.dateLabel.text = notificationList[indexPath.row].createDate
         
         return cell
     }
