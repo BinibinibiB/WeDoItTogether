@@ -84,7 +84,7 @@ extension NotificationManagementViewController : UITableViewDataSource, UITableV
         guard let cell = tableView.dequeueReusableCell(withIdentifier: NotificationContentsTableViewCell.identifier, for: indexPath) as? NotificationContentsTableViewCell else { fatalError() }
         
         cell.titleLabel.text = notificationList[indexPath.row].title
-        cell.dateLabel.text = notificationList[indexPath.row].createDate
+        cell.dateLabel.text = notificationList[indexPath.row].createDate + "/" + notificationList[indexPath.row].id
         
         return cell
     }
@@ -99,6 +99,16 @@ extension NotificationManagementViewController : UITableViewDataSource, UITableV
         detailViewController.contentsLabel = notificationList[indexPath.row].contents
         
         self.navigationController?.pushViewController(detailViewController, animated: true)
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        let ref = Database.database().reference().child("SystemNotification")
+        
+        if editingStyle == .delete {
+            ref.child(notificationList[indexPath.row].id).removeValue()
+            notificationList.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: .fade)
+        } else if editingStyle == .insert { }
     }
 }
 
