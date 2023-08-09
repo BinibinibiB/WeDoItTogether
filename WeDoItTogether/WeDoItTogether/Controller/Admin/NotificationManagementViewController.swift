@@ -55,23 +55,27 @@ extension NotificationManagementViewController {
         let ref = Database.database().reference()
         let itemsRef = ref.child("SystemNotification")
         
-        itemsRef.observeSingleEvent(of: .value) { (snapshot)  in
-            if let items = snapshot.children.allObjects as? [DataSnapshot] {
-                for itemSnapshot in items {
-                    if let notification = itemSnapshot.value as? [String: Any],
-                       let id = notification["id"] as? String,
-                       let title = notification["title"] as? String,
-                       let contents = notification["contents"] as? String,
-                       let date = notification["createDate"] as? String
-                    {
-                        let noti = SystemNotification(id: id ,title: title, contents: contents, createDate: date)
-                        notificationList.append(noti)
+        if notificationList.isEmpty {
+            itemsRef.observeSingleEvent(of: .value) { (snapshot)  in
+                if let items = snapshot.children.allObjects as? [DataSnapshot] {
+                    for itemSnapshot in items {
+                        if let notification = itemSnapshot.value as? [String: Any],
+                           let id = notification["id"] as? String,
+                           let title = notification["title"] as? String,
+                           let contents = notification["contents"] as? String,
+                           let date = notification["createDate"] as? String
+                        {
+                            let noti = SystemNotification(id: id ,title: title, contents: contents, createDate: date)
+                            notificationList.append(noti)
+                        }
+                        
                     }
-                    
+                    self.notificationManagementView.tableView.reloadData()
                 }
-                self.notificationManagementView.tableView.reloadData()
             }
+
         }
+            
     }
 }
 //MARK: - TableView Delegate
