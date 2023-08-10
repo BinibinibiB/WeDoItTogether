@@ -8,6 +8,8 @@
 import UIKit
 
 class SystemNotificationDetailView: UIView {
+    var user = UserDefaultsData.shared.getUser()
+    
     lazy var categoryLabel: UILabel = {
         let label = UILabel()
         label.text = "[공지사항]"

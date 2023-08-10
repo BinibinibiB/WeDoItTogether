@@ -17,6 +17,7 @@ class SystemNotificationDetailViewController: UIViewController {
     override func loadView() {
         super.loadView()
         self.view = systemNotificationDetailView
+        navigationController?.navigationBar.prefersLargeTitles = false
     }
     
     override func viewDidLoad() {
