@@ -21,7 +21,7 @@ class CustomMarkerView: MKAnnotationView {
     lazy var markerButton: UIButton = {
         
         let button = UIButton(type: .system)
-        button.setTitle("여기로 결정", for: .normal)
+        button.setTitle("핀을 탭해 장소결정", for: .normal)
         button.setTitleColor(.white, for: .normal)
         button.layer.borderWidth = 1.0
         button.layer.cornerRadius = 10
@@ -32,12 +32,6 @@ class CustomMarkerView: MKAnnotationView {
         button.backgroundColor = .gray.withAlphaComponent(0.5)
         button.titleLabel?.font = UIFont.systemFont(ofSize: 12)
         button.sizeToFit()
-        
-        return button
-    }()
-    
-    lazy var emptyButton: UIButton = {
-        let button = UIButton(type: .system)
         
         return button
     }()
@@ -58,7 +52,7 @@ class CustomMarkerView: MKAnnotationView {
             item.translatesAutoresizingMaskIntoConstraints = false
         }
         self.frame = markerView.frame
-        self.centerOffset = CGPoint(x: 0, y: -markerView.bounds.size.height / 2)
+        self.centerOffset = CGPoint(x: 0, y: -markerView.bounds.size.height)
     }
     
     func setLayoutConstraints() {
