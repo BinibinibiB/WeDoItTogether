@@ -72,7 +72,7 @@
 		4B21D3382A6A172F00352B29 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		4B46DB0F2A6D463B00EA7903 /* AddContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContentViewController.swift; sourceTree = "<group>"; };
 		4B46DB112A6D551100EA7903 /* HomeViewContentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewContentCell.swift; sourceTree = "<group>"; };
-		4BD9D5D22A8008B700AA160F /* AddContentMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContentMapViewController.swift; sourceTree = "<group>"; };
+		4BD9D5D22A8008B700AA160F /* AddContentMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContentMapViewController.swift; sourceTree = "<group>"; usesTabs = 0; };
 		4BD9D5D42A8008F300AA160F /* AddContentMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContentMapView.swift; sourceTree = "<group>"; };
 		4BD9D5D62A80091B00AA160F /* CustomMarkerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMarkerView.swift; sourceTree = "<group>"; };
 		4BDD0FDB2A6A19E80065D5C1 /* AddContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContentView.swift; sourceTree = "<group>"; };

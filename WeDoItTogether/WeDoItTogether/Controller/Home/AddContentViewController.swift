@@ -48,20 +48,24 @@ extension AddContentViewController {
     
     @objc func searchLocationButton(_ sender: UIButton) {
         let addContentMapViewController = AddContentMapViewController()
+        addContentMapViewController.annotationSelectedCallback = { [weak self] locationResult in
+            self?.addContentView.searchLocationButton.setTitle("장소 재설정", for: .normal)
+            self?.addContentView.locationResultLabel.text = "약속장소 : \(locationResult)"
+        }
         self.navigationController?.pushViewController(addContentMapViewController, animated: true)
     }
     
     @objc func saveButtonTapped(_ sender: UIButton) {
         let titleText = addContentView.titleTextField.text ?? ""
-        //        let locationText = contentView.locationTextField.text ?? ""
         let memoText = addContentView.memoTextField.text ?? ""
         let dateString = addContentView.dateResultLabel.text ?? ""
+        let location = addContentView.locationResultLabel.text ?? ""
         
         guard let user = user else {
             return
         }
         
-        let newItem = Item(title: titleText, date: dateString, location: "", memo: memoText, members: [user.name], emails: [user.email], creator: user.email)
+        let newItem = Item(title: titleText, date: dateString, location: location, memo: memoText, members: [user.name], emails: [user.email], creator: user.email)
         let newItemDictionary = newItem.asDictionary()
         
         let database = Database.database().reference()
