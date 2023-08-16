@@ -18,16 +18,8 @@ class HomeViewController: UIViewController, AddContentDelegate {
     convenience init(title: String) {
         self.init()
         self.title = title
+        setButtons()
         
-        let addButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addButtonTapped))
-        self.navigationItem.rightBarButtonItem = addButton
-    }
-    
-    @objc private func addButtonTapped() {
-        let addContentViewController = AddContentViewController()
-        addContentViewController.hidesBottomBarWhenPushed = true
-        addContentViewController.delegate = self
-        navigationController?.pushViewController(addContentViewController, animated: true)
     }
     
     override func loadView() {
@@ -93,9 +85,29 @@ class HomeViewController: UIViewController, AddContentDelegate {
         }
     }
     
+    func setButtons() {
+        let addButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addButtonTapped))
+        self.navigationItem.rightBarButtonItem = addButton
+        let calendarButton = UIBarButtonItem(image: UIImage(systemName: "calendar"), style: .plain, target: self, action: #selector(calendarButtonTapped))
+        self.navigationItem.leftBarButtonItem = calendarButton
+    }
+    
     func didSaveItem(_ item: Item) {
         items.append(item)
         homeView.collectionView.reloadData()
+    }
+    
+    @objc private func addButtonTapped() {
+        let addContentViewController = AddContentViewController()
+        addContentViewController.hidesBottomBarWhenPushed = true
+        addContentViewController.delegate = self
+        navigationController?.pushViewController(addContentViewController, animated: true)
+    }
+    
+    @objc private func calendarButtonTapped() {
+        let calendarViewController = CalendarViewController()
+        calendarViewController.hidesBottomBarWhenPushed = true
+        navigationController?.pushViewController(calendarViewController, animated: true)
     }
 }
 
