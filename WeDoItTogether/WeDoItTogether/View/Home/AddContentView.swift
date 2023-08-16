@@ -91,7 +91,8 @@ class AddContentView: UIView {
     lazy var locationResultLabel: UILabel = {
         let label = UILabel()
         label.textAlignment = .left
-        label.font = .boldSystemFont(ofSize: 15)
+        label.font = .boldSystemFont(ofSize: 20)
+        label.textColor = .black
         
         return label
     }()
@@ -174,18 +175,17 @@ class AddContentView: UIView {
             dateLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -padding),
             dateLabel.heightAnchor.constraint(equalToConstant: 50),
             
-            dateResultLabel.topAnchor.constraint(equalTo: dateLabel.bottomAnchor, constant: 5),
-            dateResultLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: padding),
-            dateResultLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -padding),
-            dateResultLabel.heightAnchor.constraint(equalToConstant: 50),
+            datePicker.topAnchor.constraint(equalTo: dateLabel.bottomAnchor, constant: padding),
+            datePicker.centerXAnchor.constraint(equalTo: centerXAnchor),
             
-            datePicker.topAnchor.constraint(equalTo: dateLabel.bottomAnchor, constant: padding - 5),
-            datePicker.leadingAnchor.constraint(equalTo: leadingAnchor, constant: padding),
-            datePicker.widthAnchor.constraint(equalTo: widthAnchor, multiplier: 0.9),
+            dateResultLabel.topAnchor.constraint(equalTo: datePicker.bottomAnchor, constant: 5),
+            dateResultLabel.centerXAnchor.constraint(equalTo: centerXAnchor),
+            dateResultLabel.heightAnchor.constraint(equalToConstant: 50),
+
         ])
         
         NSLayoutConstraint.activate([
-            locationLabel.topAnchor.constraint(equalTo: datePicker.bottomAnchor, constant: padding + 5 ),
+            locationLabel.topAnchor.constraint(equalTo: dateResultLabel.bottomAnchor, constant: padding + 5 ),
             locationLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: padding),
             locationLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -padding),
             locationLabel.heightAnchor.constraint(equalToConstant: 50),
