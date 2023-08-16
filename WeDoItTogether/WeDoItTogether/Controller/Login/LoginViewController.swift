@@ -117,22 +117,27 @@ extension LoginViewController {
         //임시 데이터
         ref.child("users")
             .child(emailString).observeSingleEvent(of: .value, with: { snapshot in
-          // Get user value
-            guard let value = snapshot.value as? NSDictionary else{
-                return
-            }
-            
-            print("\(value)")
-            let user = User(email: value["email"] as? String ?? "",
-                                        name: value["name"] as? String ?? "Name",
-                                        password: value["password"] as? String ?? "")
-            
-            UserDefaultsData.shared.setUser(email: user.email, name: user.name, password: user.password)
-            
-            (UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate)?.changeRootView(TabBarController(), animated: true)
-            
-        }) { error in
-          print(error.localizedDescription)
+                // Get user value
+                guard let value = snapshot.value as? NSDictionary else{
+                    return
+                }
+                
+                print("\(value)")
+                let user = User(email: value["email"] as? String ?? "",
+                                name: value["name"] as? String ?? "Name",
+                                password: value["password"] as? String ?? "")
+                
+                UserDefaultsData.shared.setUser(email: user.email, name: user.name, password: user.password)
+                
+                if user.email == "admin@admin.com"{
+                    (UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate)?.changeRootView(UINavigationController(rootViewController: AdminHomeViewController()), animated: true)
+                }else {
+                    (UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate)?.changeRootView(TabBarController(), animated: true)
+                }
+                
+                
+            }) { error in
+                print(error.localizedDescription)
         }
     }
     

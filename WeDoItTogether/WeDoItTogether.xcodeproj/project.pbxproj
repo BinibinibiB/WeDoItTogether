@@ -17,6 +17,7 @@
 		4BDD0FDE2A6A1AB60065D5C1 /* DetailContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BDD0FDD2A6A1AB60065D5C1 /* DetailContentView.swift */; };
 		4BDD0FE02A6A20230065D5C1 /* DetailContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BDD0FDF2A6A20230065D5C1 /* DetailContentViewController.swift */; };
 		4BF7A0092A6CE9BC004F5C36 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF7A0082A6CE9BC004F5C36 /* HomeViewController.swift */; };
+		53481ECA2A84F07C001E9BEB /* SystemNotificationEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53481EC92A84F07C001E9BEB /* SystemNotificationEditViewController.swift */; };
 		534F55232A603B1000A565F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534F55222A603B1000A565F8 /* AppDelegate.swift */; };
 		534F55252A603B1000A565F8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534F55242A603B1000A565F8 /* SceneDelegate.swift */; };
 		534F55272A603B1000A565F8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534F55262A603B1000A565F8 /* LoginViewController.swift */; };
@@ -33,6 +34,15 @@
 		534F55EA2A68DDF600A565F8 /* NotificationContentsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534F55E92A68DDF600A565F8 /* NotificationContentsTableViewCell.swift */; };
 		534F55EC2A68DE2200A565F8 /* SystemNotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534F55EB2A68DE2200A565F8 /* SystemNotificationViewController.swift */; };
 		534F55EE2A68DE2900A565F8 /* UserNotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534F55ED2A68DE2900A565F8 /* UserNotificationViewController.swift */; };
+		5384FD442A7FE28600C0E184 /* NotificationManagementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5384FD432A7FE28600C0E184 /* NotificationManagementViewController.swift */; };
+		5384FD462A7FE29A00C0E184 /* NotificationManagementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5384FD452A7FE29A00C0E184 /* NotificationManagementView.swift */; };
+		5384FD482A7FEF7D00C0E184 /* NotificationAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5384FD472A7FEF7D00C0E184 /* NotificationAddViewController.swift */; };
+		5384FD4A2A7FEF9F00C0E184 /* NotificationAddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5384FD492A7FEF9F00C0E184 /* NotificationAddView.swift */; };
+		5384FD4C2A7FF2D900C0E184 /* SystemNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5384FD4B2A7FF2D900C0E184 /* SystemNotification.swift */; };
+		5384FD4E2A807BDE00C0E184 /* SystemNotificationDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5384FD4D2A807BDE00C0E184 /* SystemNotificationDetailViewController.swift */; };
+		5384FD502A807BFC00C0E184 /* SystemNotificationDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5384FD4F2A807BFC00C0E184 /* SystemNotificationDetailView.swift */; };
+		5384FD592A80D1BC00C0E184 /* AdminHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5384FD582A80D1BC00C0E184 /* AdminHomeViewController.swift */; };
+		5384FD5B2A80D1CB00C0E184 /* AdminHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5384FD5A2A80D1CB00C0E184 /* AdminHomeView.swift */; };
 		5388B7242A7C1EE5004B530A /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5388B7232A7C1EE5004B530A /* StorageManager.swift */; };
 		53A724712A6BB9260098A3B3 /* ProfileEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A724702A6BB9260098A3B3 /* ProfileEditViewController.swift */; };
 		53A724732A6BB98C0098A3B3 /* ProfileEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A724722A6BB98C0098A3B3 /* ProfileEditView.swift */; };
@@ -58,7 +68,6 @@
 		B18B47CB2A7AB898006EC979 /* MapCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18B47CA2A7AB898006EC979 /* MapCollectionViewCell.swift */; };
 		B18B47CE2A7AC903006EC979 /* UserDefaultsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18B47CD2A7AC903006EC979 /* UserDefaultsData.swift */; };
 		B18B47D02A7AC98A006EC979 /* CurrentLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18B47CF2A7AC98A006EC979 /* CurrentLocation.swift */; };
-		B18C83742A7FC97500683F4D /* zfzfzz.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18C83732A7FC97500683F4D /* zfzfzz.swift */; };
 		B18C83762A7FEBCF00683F4D /* UserNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18C83752A7FEBCF00683F4D /* UserNotification.swift */; };
 		B18C83982A80082A00683F4D /* Loading.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18C83972A80082A00683F4D /* Loading.swift */; };
 		B1E5CB8A2A70B3F4004317EE /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = B1E5CB892A70B3F4004317EE /* FirebaseAuth */; };
@@ -79,6 +88,7 @@
 		4BDD0FDD2A6A1AB60065D5C1 /* DetailContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailContentView.swift; sourceTree = "<group>"; };
 		4BDD0FDF2A6A20230065D5C1 /* DetailContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailContentViewController.swift; sourceTree = "<group>"; };
 		4BF7A0082A6CE9BC004F5C36 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		53481EC92A84F07C001E9BEB /* SystemNotificationEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemNotificationEditViewController.swift; sourceTree = "<group>"; };
 		534F551F2A603B1000A565F8 /* WeDoItTogether.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeDoItTogether.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		534F55222A603B1000A565F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		534F55242A603B1000A565F8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -97,6 +107,15 @@
 		534F55E92A68DDF600A565F8 /* NotificationContentsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationContentsTableViewCell.swift; sourceTree = "<group>"; };
 		534F55EB2A68DE2200A565F8 /* SystemNotificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SystemNotificationViewController.swift; sourceTree = "<group>"; };
 		534F55ED2A68DE2900A565F8 /* UserNotificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserNotificationViewController.swift; sourceTree = "<group>"; };
+		5384FD432A7FE28600C0E184 /* NotificationManagementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManagementViewController.swift; sourceTree = "<group>"; };
+		5384FD452A7FE29A00C0E184 /* NotificationManagementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManagementView.swift; sourceTree = "<group>"; };
+		5384FD472A7FEF7D00C0E184 /* NotificationAddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationAddViewController.swift; sourceTree = "<group>"; };
+		5384FD492A7FEF9F00C0E184 /* NotificationAddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationAddView.swift; sourceTree = "<group>"; };
+		5384FD4B2A7FF2D900C0E184 /* SystemNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemNotification.swift; sourceTree = "<group>"; };
+		5384FD4D2A807BDE00C0E184 /* SystemNotificationDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemNotificationDetailViewController.swift; sourceTree = "<group>"; };
+		5384FD4F2A807BFC00C0E184 /* SystemNotificationDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemNotificationDetailView.swift; sourceTree = "<group>"; };
+		5384FD582A80D1BC00C0E184 /* AdminHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminHomeViewController.swift; sourceTree = "<group>"; };
+		5384FD5A2A80D1CB00C0E184 /* AdminHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminHomeView.swift; sourceTree = "<group>"; };
 		5388B7232A7C1EE5004B530A /* StorageManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 		53A724702A6BB9260098A3B3 /* ProfileEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditViewController.swift; sourceTree = "<group>"; };
 		53A724722A6BB98C0098A3B3 /* ProfileEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditView.swift; sourceTree = "<group>"; };
@@ -122,7 +141,6 @@
 		B18B47CA2A7AB898006EC979 /* MapCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapCollectionViewCell.swift; sourceTree = "<group>"; };
 		B18B47CD2A7AC903006EC979 /* UserDefaultsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsData.swift; sourceTree = "<group>"; };
 		B18B47CF2A7AC98A006EC979 /* CurrentLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentLocation.swift; sourceTree = "<group>"; };
-		B18C83732A7FC97500683F4D /* zfzfzz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = zfzfzz.swift; sourceTree = "<group>"; };
 		B18C83752A7FEBCF00683F4D /* UserNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserNotification.swift; sourceTree = "<group>"; };
 		B18C83972A80082A00683F4D /* Loading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loading.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -190,6 +208,7 @@
 			isa = PBXGroup;
 			children = (
 				534F55422A60726000A565F8 /* NotificationView.swift */,
+				5384FD4F2A807BFC00C0E184 /* SystemNotificationDetailView.swift */,
 			);
 			path = Notification;
 			sourceTree = "<group>";
@@ -221,6 +240,7 @@
 				534F55EB2A68DE2200A565F8 /* SystemNotificationViewController.swift */,
 				534F55ED2A68DE2900A565F8 /* UserNotificationViewController.swift */,
 				534F553E2A60723C00A565F8 /* NotificationViewController.swift */,
+				5384FD4D2A807BDE00C0E184 /* SystemNotificationDetailViewController.swift */,
 			);
 			path = Notification;
 			sourceTree = "<group>";
@@ -262,9 +282,29 @@
 				B109F91C2A605AAA002E870C /* Controller */,
 				53479FF72A699EDE00645844 /* Cell */,
 				B109F91B2A605AA1002E870C /* View */,
-				B18C83732A7FC97500683F4D /* zfzfzz.swift */,
 			);
 			path = WeDoItTogether;
+			sourceTree = "<group>";
+		};
+		5384FD412A7FE17C00C0E184 /* Admin */ = {
+			isa = PBXGroup;
+			children = (
+				5384FD432A7FE28600C0E184 /* NotificationManagementViewController.swift */,
+				5384FD472A7FEF7D00C0E184 /* NotificationAddViewController.swift */,
+				5384FD582A80D1BC00C0E184 /* AdminHomeViewController.swift */,
+				53481EC92A84F07C001E9BEB /* SystemNotificationEditViewController.swift */,
+			);
+			path = Admin;
+			sourceTree = "<group>";
+		};
+		5384FD422A7FE18C00C0E184 /* Admin */ = {
+			isa = PBXGroup;
+			children = (
+				5384FD452A7FE29A00C0E184 /* NotificationManagementView.swift */,
+				5384FD492A7FEF9F00C0E184 /* NotificationAddView.swift */,
+				5384FD5A2A80D1CB00C0E184 /* AdminHomeView.swift */,
+			);
+			path = Admin;
 			sourceTree = "<group>";
 		};
 		B101A1BB2A681C9200B92ECF /* Login */ = {
@@ -290,6 +330,7 @@
 		B109F91B2A605AA1002E870C /* View */ = {
 			isa = PBXGroup;
 			children = (
+				5384FD422A7FE18C00C0E184 /* Admin */,
 				B101A1BB2A681C9200B92ECF /* Login */,
 				53479FF82A699F0300645844 /* Home */,
 				53479FF92A699F0800645844 /* Profile */,
@@ -303,6 +344,7 @@
 		B109F91C2A605AAA002E870C /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				5384FD412A7FE17C00C0E184 /* Admin */,
 				B109F9192A605A97002E870C /* TabBarController.swift */,
 				B101A1BE2A681CF900B92ECF /* Login */,
 				53479FFC2A699F3F00645844 /* Home */,
@@ -332,8 +374,9 @@
 				5458D5102A7BBB9800C98C17 /* ChatList.swift */,
 				B11477282A6909FF003AB9C7 /* User.swift */,
 				B18B47CF2A7AC98A006EC979 /* CurrentLocation.swift */,
-				4B21D3382A6A172F00352B29 /* Item.swift */,
 				B18C83752A7FEBCF00683F4D /* UserNotification.swift */,
+				4B21D3382A6A172F00352B29 /* Item.swift */,
+				5384FD4B2A7FF2D900C0E184 /* SystemNotification.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -451,10 +494,12 @@
 				53A724712A6BB9260098A3B3 /* ProfileEditViewController.swift in Sources */,
 				53A724732A6BB98C0098A3B3 /* ProfileEditView.swift in Sources */,
 				5458D50D2A7BBB7600C98C17 /* ChatListView.swift in Sources */,
+				5384FD462A7FE29A00C0E184 /* NotificationManagementView.swift in Sources */,
 				B18B47CB2A7AB898006EC979 /* MapCollectionViewCell.swift in Sources */,
 				548060882A696AF0000DFC56 /* ForgetPasswordVIew.swift in Sources */,
 				4B21D3392A6A172F00352B29 /* Item.swift in Sources */,
 				53A724F02A717BE70098A3B3 /* PasswordEditView.swift in Sources */,
+				5384FD442A7FE28600C0E184 /* NotificationManagementViewController.swift in Sources */,
 				4BDD0FDE2A6A1AB60065D5C1 /* DetailContentView.swift in Sources */,
 				534F55392A60713300A565F8 /* ProfileView.swift in Sources */,
 				534F553F2A60723C00A565F8 /* NotificationViewController.swift in Sources */,
@@ -463,16 +508,19 @@
 				534F55432A60726000A565F8 /* NotificationView.swift in Sources */,
 				534F55272A603B1000A565F8 /* LoginViewController.swift in Sources */,
 				B18B47D02A7AC98A006EC979 /* CurrentLocation.swift in Sources */,
+				5384FD4C2A7FF2D900C0E184 /* SystemNotification.swift in Sources */,
 				5480608A2A696B0C000DFC56 /* ForgetPasswordViewController.swift in Sources */,
-				B18C83742A7FC97500683F4D /* zfzfzz.swift in Sources */,
 				5458D50B2A7BBB5700C98C17 /* ChattingCell.swift in Sources */,
 				4BD9D5D32A8008B700AA160F /* AddContentMapViewController.swift in Sources */,
+				5384FD502A807BFC00C0E184 /* SystemNotificationDetailView.swift in Sources */,
 				B101A1BD2A681CEF00B92ECF /* RegisterView.swift in Sources */,
+				5384FD482A7FEF7D00C0E184 /* NotificationAddViewController.swift in Sources */,
 				5458D50F2A7BBB7C00C98C17 /* ChatListViewController.swift in Sources */,
 				B109F9202A605C5B002E870C /* HomeView.swift in Sources */,
 				B18C83982A80082A00683F4D /* Loading.swift in Sources */,
 				4B46DB102A6D463B00EA7903 /* AddContentViewController.swift in Sources */,
 				534F55EA2A68DDF600A565F8 /* NotificationContentsTableViewCell.swift in Sources */,
+				5384FD5B2A80D1CB00C0E184 /* AdminHomeView.swift in Sources */,
 				534F55372A603B9400A565F8 /* LoginView.swift in Sources */,
 				B109F91A2A605A97002E870C /* TabBarController.swift in Sources */,
 				4BDD0FDC2A6A19E80065D5C1 /* AddContentView.swift in Sources */,
@@ -496,6 +544,10 @@
 				B11477292A6909FF003AB9C7 /* User.swift in Sources */,
 				4BD9D5D72A80091B00AA160F /* CustomMarkerView.swift in Sources */,
 				5458D5112A7BBB9800C98C17 /* ChatList.swift in Sources */,
+				5384FD592A80D1BC00C0E184 /* AdminHomeViewController.swift in Sources */,
+				5384FD4A2A7FEF9F00C0E184 /* NotificationAddView.swift in Sources */,
+				53481ECA2A84F07C001E9BEB /* SystemNotificationEditViewController.swift in Sources */,
+				5384FD4E2A807BDE00C0E184 /* SystemNotificationDetailViewController.swift in Sources */,
 				4BDD0FE02A6A20230065D5C1 /* DetailContentViewController.swift in Sources */,
 				4BD9D5D52A8008F300AA160F /* AddContentMapView.swift in Sources */,
 			);
