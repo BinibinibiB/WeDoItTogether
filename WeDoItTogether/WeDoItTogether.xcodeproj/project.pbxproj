@@ -10,6 +10,8 @@
 		4B21D3392A6A172F00352B29 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B21D3382A6A172F00352B29 /* Item.swift */; };
 		4B46DB102A6D463B00EA7903 /* AddContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B46DB0F2A6D463B00EA7903 /* AddContentViewController.swift */; };
 		4B46DB122A6D551100EA7903 /* HomeViewContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B46DB112A6D551100EA7903 /* HomeViewContentCell.swift */; };
+		4BA44B332A8CBA73001134E9 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA44B322A8CBA73001134E9 /* CalendarView.swift */; };
+		4BA44B352A8CBAC9001134E9 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA44B342A8CBAC9001134E9 /* CalendarViewController.swift */; };
 		4BD9D5D32A8008B700AA160F /* AddContentMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD9D5D22A8008B700AA160F /* AddContentMapViewController.swift */; };
 		4BD9D5D52A8008F300AA160F /* AddContentMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD9D5D42A8008F300AA160F /* AddContentMapView.swift */; };
 		4BD9D5D72A80091B00AA160F /* CustomMarkerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD9D5D62A80091B00AA160F /* CustomMarkerView.swift */; };
@@ -81,6 +83,8 @@
 		4B21D3382A6A172F00352B29 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		4B46DB0F2A6D463B00EA7903 /* AddContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContentViewController.swift; sourceTree = "<group>"; };
 		4B46DB112A6D551100EA7903 /* HomeViewContentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewContentCell.swift; sourceTree = "<group>"; };
+		4BA44B322A8CBA73001134E9 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		4BA44B342A8CBAC9001134E9 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		4BD9D5D22A8008B700AA160F /* AddContentMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContentMapViewController.swift; sourceTree = "<group>"; usesTabs = 0; };
 		4BD9D5D42A8008F300AA160F /* AddContentMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContentMapView.swift; sourceTree = "<group>"; };
 		4BD9D5D62A80091B00AA160F /* CustomMarkerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMarkerView.swift; sourceTree = "<group>"; };
@@ -181,6 +185,7 @@
 				4BDD0FDD2A6A1AB60065D5C1 /* DetailContentView.swift */,
 				4BD9D5D42A8008F300AA160F /* AddContentMapView.swift */,
 				4BD9D5D62A80091B00AA160F /* CustomMarkerView.swift */,
+				4BA44B322A8CBA73001134E9 /* CalendarView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -220,6 +225,7 @@
 				4B46DB0F2A6D463B00EA7903 /* AddContentViewController.swift */,
 				4BDD0FDF2A6A20230065D5C1 /* DetailContentViewController.swift */,
 				4BD9D5D22A8008B700AA160F /* AddContentMapViewController.swift */,
+				4BA44B342A8CBAC9001134E9 /* CalendarViewController.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -502,6 +508,7 @@
 				5384FD442A7FE28600C0E184 /* NotificationManagementViewController.swift in Sources */,
 				4BDD0FDE2A6A1AB60065D5C1 /* DetailContentView.swift in Sources */,
 				534F55392A60713300A565F8 /* ProfileView.swift in Sources */,
+				4BA44B352A8CBAC9001134E9 /* CalendarViewController.swift in Sources */,
 				534F553F2A60723C00A565F8 /* NotificationViewController.swift in Sources */,
 				5388B7242A7C1EE5004B530A /* StorageManager.swift in Sources */,
 				534F55412A60724E00A565F8 /* ChattingView.swift in Sources */,
@@ -549,6 +556,7 @@
 				53481ECA2A84F07C001E9BEB /* SystemNotificationEditViewController.swift in Sources */,
 				5384FD4E2A807BDE00C0E184 /* SystemNotificationDetailViewController.swift in Sources */,
 				4BDD0FE02A6A20230065D5C1 /* DetailContentViewController.swift in Sources */,
+				4BA44B332A8CBA73001134E9 /* CalendarView.swift in Sources */,
 				4BD9D5D52A8008F300AA160F /* AddContentMapView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
