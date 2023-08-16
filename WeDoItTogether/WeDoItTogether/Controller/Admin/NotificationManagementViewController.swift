@@ -99,8 +99,7 @@ extension NotificationManagementViewController : UITableViewDataSource, UITableV
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let detailViewController = SystemNotificationDetailViewController()
-        detailViewController.titleLabel = notificationList[indexPath.row].title
-        detailViewController.contentsLabel = notificationList[indexPath.row].contents
+        detailViewController.notification = notificationList[indexPath.row]
         
         self.navigationController?.pushViewController(detailViewController, animated: true)
     }

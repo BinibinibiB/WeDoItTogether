@@ -17,6 +17,7 @@
 		4BDD0FDE2A6A1AB60065D5C1 /* DetailContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BDD0FDD2A6A1AB60065D5C1 /* DetailContentView.swift */; };
 		4BDD0FE02A6A20230065D5C1 /* DetailContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BDD0FDF2A6A20230065D5C1 /* DetailContentViewController.swift */; };
 		4BF7A0092A6CE9BC004F5C36 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF7A0082A6CE9BC004F5C36 /* HomeViewController.swift */; };
+		53481ECA2A84F07C001E9BEB /* SystemNotificationEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53481EC92A84F07C001E9BEB /* SystemNotificationEditViewController.swift */; };
 		534F55232A603B1000A565F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534F55222A603B1000A565F8 /* AppDelegate.swift */; };
 		534F55252A603B1000A565F8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534F55242A603B1000A565F8 /* SceneDelegate.swift */; };
 		534F55272A603B1000A565F8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534F55262A603B1000A565F8 /* LoginViewController.swift */; };
@@ -89,6 +90,7 @@
 		4BDD0FDD2A6A1AB60065D5C1 /* DetailContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailContentView.swift; sourceTree = "<group>"; };
 		4BDD0FDF2A6A20230065D5C1 /* DetailContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailContentViewController.swift; sourceTree = "<group>"; };
 		4BF7A0082A6CE9BC004F5C36 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		53481EC92A84F07C001E9BEB /* SystemNotificationEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemNotificationEditViewController.swift; sourceTree = "<group>"; };
 		534F551F2A603B1000A565F8 /* WeDoItTogether.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeDoItTogether.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		534F55222A603B1000A565F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		534F55242A603B1000A565F8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -296,6 +298,7 @@
 				5384FD432A7FE28600C0E184 /* NotificationManagementViewController.swift */,
 				5384FD472A7FEF7D00C0E184 /* NotificationAddViewController.swift */,
 				5384FD582A80D1BC00C0E184 /* AdminHomeViewController.swift */,
+				53481EC92A84F07C001E9BEB /* SystemNotificationEditViewController.swift */,
 			);
 			path = Admin;
 			sourceTree = "<group>";
@@ -377,9 +380,8 @@
 				5458D5102A7BBB9800C98C17 /* ChatList.swift */,
 				B11477282A6909FF003AB9C7 /* User.swift */,
 				B18B47CF2A7AC98A006EC979 /* CurrentLocation.swift */,
-				4B21D3382A6A172F00352B29 /* Item.swift */,
 				B18C83752A7FEBCF00683F4D /* UserNotification.swift */,
-				4B21D3382A6A172F00352B29 /* HomeTestModel.swift */,
+				4B21D3382A6A172F00352B29 /* Item.swift */,
 				5384FD4B2A7FF2D900C0E184 /* SystemNotification.swift */,
 			);
 			path = Model;
@@ -552,6 +554,7 @@
 				5458D5112A7BBB9800C98C17 /* ChatList.swift in Sources */,
 				5384FD592A80D1BC00C0E184 /* AdminHomeViewController.swift in Sources */,
 				5384FD4A2A7FEF9F00C0E184 /* NotificationAddView.swift in Sources */,
+				53481ECA2A84F07C001E9BEB /* SystemNotificationEditViewController.swift in Sources */,
 				5384FD4E2A807BDE00C0E184 /* SystemNotificationDetailViewController.swift in Sources */,
 				4BDD0FE02A6A20230065D5C1 /* DetailContentViewController.swift in Sources */,
 				4BD9D5D52A8008F300AA160F /* AddContentMapView.swift in Sources */,

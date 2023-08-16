@@ -10,8 +10,7 @@ import UIKit
 class SystemNotificationDetailViewController: UIViewController {
     
     let systemNotificationDetailView = SystemNotificationDetailView()
-    var titleLabel: String = ""
-    var contentsLabel: String = ""
+    var notification: SystemNotification?
     var user = UserDefaultsData.shared.getUser()
     
     override func loadView() {
@@ -26,8 +25,14 @@ class SystemNotificationDetailViewController: UIViewController {
         setBarButton()
         // Do any additional setup after loading the view.
     }
-    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        setLabel()
+    }
     private func setLabel(){
+        guard let titleLabel = notification?.title else { return }
+        guard let contentsLabel = notification?.contents else { return }
+        
         systemNotificationDetailView.titleLabel.text = titleLabel
         systemNotificationDetailView.contentsLabel.text = contentsLabel
     }
@@ -44,6 +49,16 @@ class SystemNotificationDetailViewController: UIViewController {
 //MARK: - Button
 extension SystemNotificationDetailViewController{
     @objc func touchUpEditButton(_ sender: UIBarButtonItem){
-        print("수정")
+        let editViewController = SystemNotificationEditViewController()
+        editViewController.notification = notification
+        editViewController.delegate = self
+        self.navigationController?.pushViewController(editViewController, animated: true)
+    }
+}
+
+//MARK: - 데이터 전달 Delegate
+extension SystemNotificationDetailViewController: ChangeNotificaionDelegate {
+    func changeData(data: SystemNotification) {
+        self.notification = data
     }
 }
