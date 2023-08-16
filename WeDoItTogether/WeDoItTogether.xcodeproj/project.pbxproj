@@ -34,7 +34,6 @@
 		534F55EA2A68DDF600A565F8 /* NotificationContentsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534F55E92A68DDF600A565F8 /* NotificationContentsTableViewCell.swift */; };
 		534F55EC2A68DE2200A565F8 /* SystemNotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534F55EB2A68DE2200A565F8 /* SystemNotificationViewController.swift */; };
 		534F55EE2A68DE2900A565F8 /* UserNotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534F55ED2A68DE2900A565F8 /* UserNotificationViewController.swift */; };
-		5384FD402A7FC17300C0E184 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5384FD3F2A7FC17300C0E184 /* Test.swift */; };
 		5384FD442A7FE28600C0E184 /* NotificationManagementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5384FD432A7FE28600C0E184 /* NotificationManagementViewController.swift */; };
 		5384FD462A7FE29A00C0E184 /* NotificationManagementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5384FD452A7FE29A00C0E184 /* NotificationManagementView.swift */; };
 		5384FD482A7FEF7D00C0E184 /* NotificationAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5384FD472A7FEF7D00C0E184 /* NotificationAddViewController.swift */; };
@@ -69,7 +68,6 @@
 		B18B47CB2A7AB898006EC979 /* MapCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18B47CA2A7AB898006EC979 /* MapCollectionViewCell.swift */; };
 		B18B47CE2A7AC903006EC979 /* UserDefaultsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18B47CD2A7AC903006EC979 /* UserDefaultsData.swift */; };
 		B18B47D02A7AC98A006EC979 /* CurrentLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18B47CF2A7AC98A006EC979 /* CurrentLocation.swift */; };
-		B18C83742A7FC97500683F4D /* zfzfzz.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18C83732A7FC97500683F4D /* zfzfzz.swift */; };
 		B18C83762A7FEBCF00683F4D /* UserNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18C83752A7FEBCF00683F4D /* UserNotification.swift */; };
 		B18C83982A80082A00683F4D /* Loading.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18C83972A80082A00683F4D /* Loading.swift */; };
 		B1E5CB8A2A70B3F4004317EE /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = B1E5CB892A70B3F4004317EE /* FirebaseAuth */; };
@@ -109,7 +107,6 @@
 		534F55E92A68DDF600A565F8 /* NotificationContentsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationContentsTableViewCell.swift; sourceTree = "<group>"; };
 		534F55EB2A68DE2200A565F8 /* SystemNotificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SystemNotificationViewController.swift; sourceTree = "<group>"; };
 		534F55ED2A68DE2900A565F8 /* UserNotificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserNotificationViewController.swift; sourceTree = "<group>"; };
-		5384FD3F2A7FC17300C0E184 /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
 		5384FD432A7FE28600C0E184 /* NotificationManagementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManagementViewController.swift; sourceTree = "<group>"; };
 		5384FD452A7FE29A00C0E184 /* NotificationManagementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManagementView.swift; sourceTree = "<group>"; };
 		5384FD472A7FEF7D00C0E184 /* NotificationAddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationAddViewController.swift; sourceTree = "<group>"; };
@@ -144,7 +141,6 @@
 		B18B47CA2A7AB898006EC979 /* MapCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapCollectionViewCell.swift; sourceTree = "<group>"; };
 		B18B47CD2A7AC903006EC979 /* UserDefaultsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsData.swift; sourceTree = "<group>"; };
 		B18B47CF2A7AC98A006EC979 /* CurrentLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentLocation.swift; sourceTree = "<group>"; };
-		B18C83732A7FC97500683F4D /* zfzfzz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = zfzfzz.swift; sourceTree = "<group>"; };
 		B18C83752A7FEBCF00683F4D /* UserNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserNotification.swift; sourceTree = "<group>"; };
 		B18C83972A80082A00683F4D /* Loading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loading.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -286,8 +282,6 @@
 				B109F91C2A605AAA002E870C /* Controller */,
 				53479FF72A699EDE00645844 /* Cell */,
 				B109F91B2A605AA1002E870C /* View */,
-				B18C83732A7FC97500683F4D /* zfzfzz.swift */,
-				5384FD3F2A7FC17300C0E184 /* Test.swift */,
 			);
 			path = WeDoItTogether;
 			sourceTree = "<group>";
@@ -513,11 +507,9 @@
 				534F55412A60724E00A565F8 /* ChattingView.swift in Sources */,
 				534F55432A60726000A565F8 /* NotificationView.swift in Sources */,
 				534F55272A603B1000A565F8 /* LoginViewController.swift in Sources */,
-				5384FD402A7FC17300C0E184 /* Test.swift in Sources */,
 				B18B47D02A7AC98A006EC979 /* CurrentLocation.swift in Sources */,
 				5384FD4C2A7FF2D900C0E184 /* SystemNotification.swift in Sources */,
 				5480608A2A696B0C000DFC56 /* ForgetPasswordViewController.swift in Sources */,
-				B18C83742A7FC97500683F4D /* zfzfzz.swift in Sources */,
 				5458D50B2A7BBB5700C98C17 /* ChattingCell.swift in Sources */,
 				4BD9D5D32A8008B700AA160F /* AddContentMapViewController.swift in Sources */,
 				5384FD502A807BFC00C0E184 /* SystemNotificationDetailView.swift in Sources */,
