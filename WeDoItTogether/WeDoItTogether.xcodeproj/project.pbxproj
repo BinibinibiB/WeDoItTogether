@@ -70,6 +70,16 @@
 		B18B47D02A7AC98A006EC979 /* CurrentLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18B47CF2A7AC98A006EC979 /* CurrentLocation.swift */; };
 		B18C83762A7FEBCF00683F4D /* UserNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18C83752A7FEBCF00683F4D /* UserNotification.swift */; };
 		B18C83982A80082A00683F4D /* Loading.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18C83972A80082A00683F4D /* Loading.swift */; };
+		B19232AA2A8D58D900CECFDD /* KakaoSDK in Frameworks */ = {isa = PBXBuildFile; productRef = B19232A92A8D58D900CECFDD /* KakaoSDK */; };
+		B19232AC2A8D58D900CECFDD /* KakaoSDKAuth in Frameworks */ = {isa = PBXBuildFile; productRef = B19232AB2A8D58D900CECFDD /* KakaoSDKAuth */; };
+		B19232AE2A8D58D900CECFDD /* KakaoSDKCommon in Frameworks */ = {isa = PBXBuildFile; productRef = B19232AD2A8D58D900CECFDD /* KakaoSDKCommon */; };
+		B19232B02A8D58D900CECFDD /* KakaoSDKFriend in Frameworks */ = {isa = PBXBuildFile; productRef = B19232AF2A8D58D900CECFDD /* KakaoSDKFriend */; };
+		B19232B22A8D58D900CECFDD /* KakaoSDKFriendCore in Frameworks */ = {isa = PBXBuildFile; productRef = B19232B12A8D58D900CECFDD /* KakaoSDKFriendCore */; };
+		B19232B42A8D58D900CECFDD /* KakaoSDKNavi in Frameworks */ = {isa = PBXBuildFile; productRef = B19232B32A8D58D900CECFDD /* KakaoSDKNavi */; };
+		B19232B62A8D58D900CECFDD /* KakaoSDKShare in Frameworks */ = {isa = PBXBuildFile; productRef = B19232B52A8D58D900CECFDD /* KakaoSDKShare */; };
+		B19232B82A8D58D900CECFDD /* KakaoSDKTalk in Frameworks */ = {isa = PBXBuildFile; productRef = B19232B72A8D58D900CECFDD /* KakaoSDKTalk */; };
+		B19232BA2A8D58D900CECFDD /* KakaoSDKTemplate in Frameworks */ = {isa = PBXBuildFile; productRef = B19232B92A8D58D900CECFDD /* KakaoSDKTemplate */; };
+		B19232BC2A8D58D900CECFDD /* KakaoSDKUser in Frameworks */ = {isa = PBXBuildFile; productRef = B19232BB2A8D58D900CECFDD /* KakaoSDKUser */; };
 		B1E5CB8A2A70B3F4004317EE /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = B1E5CB892A70B3F4004317EE /* FirebaseAuth */; };
 		B1E5CB8C2A70B3F4004317EE /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = B1E5CB8B2A70B3F4004317EE /* FirebaseDatabase */; };
 		B1E5CB8E2A70B3F4004317EE /* FirebaseDatabaseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = B1E5CB8D2A70B3F4004317EE /* FirebaseDatabaseSwift */; };
@@ -150,11 +160,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B19232AE2A8D58D900CECFDD /* KakaoSDKCommon in Frameworks */,
+				B19232AC2A8D58D900CECFDD /* KakaoSDKAuth in Frameworks */,
+				B19232B02A8D58D900CECFDD /* KakaoSDKFriend in Frameworks */,
 				B1E5CB8E2A70B3F4004317EE /* FirebaseDatabaseSwift in Frameworks */,
+				B19232B42A8D58D900CECFDD /* KakaoSDKNavi in Frameworks */,
+				B19232B62A8D58D900CECFDD /* KakaoSDKShare in Frameworks */,
 				B1E5CB902A70B3F4004317EE /* FirebaseStorage in Frameworks */,
+				B19232B82A8D58D900CECFDD /* KakaoSDKTalk in Frameworks */,
+				B19232BC2A8D58D900CECFDD /* KakaoSDKUser in Frameworks */,
 				B1E5CB932A70B406004317EE /* SwiftSMTP in Frameworks */,
+				B19232BA2A8D58D900CECFDD /* KakaoSDKTemplate in Frameworks */,
 				B1E5CB8C2A70B3F4004317EE /* FirebaseDatabase in Frameworks */,
 				B1E5CB8A2A70B3F4004317EE /* FirebaseAuth in Frameworks */,
+				B19232B22A8D58D900CECFDD /* KakaoSDKFriendCore in Frameworks */,
+				B19232AA2A8D58D900CECFDD /* KakaoSDK in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,6 +239,7 @@
 				4BF7A0082A6CE9BC004F5C36 /* HomeViewController.swift */,
 				4B46DB0F2A6D463B00EA7903 /* AddContentViewController.swift */,
 				4BDD0FDF2A6A20230065D5C1 /* DetailContentViewController.swift */,
+				B109F91B2A605AA1002E870C /* View */,
 				4BD9D5D22A8008B700AA160F /* AddContentMapViewController.swift */,
 			);
 			path = Home;
@@ -281,7 +302,6 @@
 				B11477262A6909E1003AB9C7 /* Model */,
 				B109F91C2A605AAA002E870C /* Controller */,
 				53479FF72A699EDE00645844 /* Cell */,
-				B109F91B2A605AA1002E870C /* View */,
 			);
 			path = WeDoItTogether;
 			sourceTree = "<group>";
@@ -430,6 +450,16 @@
 				B1E5CB8D2A70B3F4004317EE /* FirebaseDatabaseSwift */,
 				B1E5CB8F2A70B3F4004317EE /* FirebaseStorage */,
 				B1E5CB922A70B406004317EE /* SwiftSMTP */,
+				B19232A92A8D58D900CECFDD /* KakaoSDK */,
+				B19232AB2A8D58D900CECFDD /* KakaoSDKAuth */,
+				B19232AD2A8D58D900CECFDD /* KakaoSDKCommon */,
+				B19232AF2A8D58D900CECFDD /* KakaoSDKFriend */,
+				B19232B12A8D58D900CECFDD /* KakaoSDKFriendCore */,
+				B19232B32A8D58D900CECFDD /* KakaoSDKNavi */,
+				B19232B52A8D58D900CECFDD /* KakaoSDKShare */,
+				B19232B72A8D58D900CECFDD /* KakaoSDKTalk */,
+				B19232B92A8D58D900CECFDD /* KakaoSDKTemplate */,
+				B19232BB2A8D58D900CECFDD /* KakaoSDKUser */,
 			);
 			productName = WeDoItTogether;
 			productReference = 534F551F2A603B1000A565F8 /* WeDoItTogether.app */;
@@ -462,6 +492,7 @@
 			packageReferences = (
 				B1E5CB882A70B3F4004317EE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				B1E5CB912A70B406004317EE /* XCRemoteSwiftPackageReference "Swift-SMTP" */,
+				B19232A82A8D58D900CECFDD /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */,
 			);
 			productRefGroup = 534F55202A603B1000A565F8 /* Products */;
 			projectDirPath = "";
@@ -688,9 +719,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = C39BYRTABZ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = WeDoItTogether/Others/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Access the camera to set your profile image ";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "위치 설정 권한을 설정해주세요.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Access the gallery to set your profile image ";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -715,9 +749,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = C39BYRTABZ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = WeDoItTogether/Others/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Access the camera to set your profile image ";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "위치 설정 권한을 설정해주세요.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Access the gallery to set your profile image ";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -759,6 +796,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		B19232A82A8D58D900CECFDD /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kakao/kakao-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
 		B1E5CB882A70B3F4004317EE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
@@ -778,6 +823,56 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		B19232A92A8D58D900CECFDD /* KakaoSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B19232A82A8D58D900CECFDD /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
+			productName = KakaoSDK;
+		};
+		B19232AB2A8D58D900CECFDD /* KakaoSDKAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B19232A82A8D58D900CECFDD /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
+			productName = KakaoSDKAuth;
+		};
+		B19232AD2A8D58D900CECFDD /* KakaoSDKCommon */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B19232A82A8D58D900CECFDD /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
+			productName = KakaoSDKCommon;
+		};
+		B19232AF2A8D58D900CECFDD /* KakaoSDKFriend */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B19232A82A8D58D900CECFDD /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
+			productName = KakaoSDKFriend;
+		};
+		B19232B12A8D58D900CECFDD /* KakaoSDKFriendCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B19232A82A8D58D900CECFDD /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
+			productName = KakaoSDKFriendCore;
+		};
+		B19232B32A8D58D900CECFDD /* KakaoSDKNavi */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B19232A82A8D58D900CECFDD /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
+			productName = KakaoSDKNavi;
+		};
+		B19232B52A8D58D900CECFDD /* KakaoSDKShare */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B19232A82A8D58D900CECFDD /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
+			productName = KakaoSDKShare;
+		};
+		B19232B72A8D58D900CECFDD /* KakaoSDKTalk */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B19232A82A8D58D900CECFDD /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
+			productName = KakaoSDKTalk;
+		};
+		B19232B92A8D58D900CECFDD /* KakaoSDKTemplate */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B19232A82A8D58D900CECFDD /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
+			productName = KakaoSDKTemplate;
+		};
+		B19232BB2A8D58D900CECFDD /* KakaoSDKUser */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B19232A82A8D58D900CECFDD /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
+			productName = KakaoSDKUser;
+		};
 		B1E5CB892A70B3F4004317EE /* FirebaseAuth */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = B1E5CB882A70B3F4004317EE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;

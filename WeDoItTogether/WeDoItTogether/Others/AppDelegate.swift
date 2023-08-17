@@ -9,6 +9,7 @@ import UIKit
 import Firebase
 import NotificationCenter
 import UserNotifications
+import KakaoSDKCommon
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,7 +17,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var userNotificationCenter = UNUserNotificationCenter.current()
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        KakaoSDK.initSDK(appKey: "f0c3ea739ebf0f7f87cfaa329ffcf89c")
         
         FirebaseApp.configure()
         userNotificationCenter.delegate = self
